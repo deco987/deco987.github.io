@@ -18,7 +18,7 @@
             margin: 0;
         }
 
-     .test-container {
+    .test-container {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,24 +27,28 @@
             max-width: 600px;
         }
 
-     .question {
+    .question {
             margin-bottom: 20px;
         }
 
-     .result {
+    .result {
             margin-top: 20px;
             font-weight: bold;
             text-align: center;
         }
 
-     .btn-primary {
+    .btn-primary {
             background-color: #007bff;
             border-color: #007bff;
         }
 
-     .btn-primary:hover {
+    .btn-primary:hover {
             background-color: #0056b3;
             border-color: #0056b3;
+        }
+
+    .btn-clear {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -101,6 +105,7 @@
             <button type="submit" class="btn btn-primary w-100">提交</button>
         </form>
         <div class="result" id="result"></div>
+        <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton">清除答案</button>
     </div>
 
     <script>
@@ -129,6 +134,17 @@
 
             let resultDiv = document.getElementById('result');
             resultDiv.innerHTML = `你的得分是：${score}/3`;
+        });
+
+        document.getElementById('clearButton').addEventListener('click', function () {
+            // 获取所有单选按钮
+            let radios = document.querySelectorAll('input[type="radio"]');
+            radios.forEach(function (radio) {
+                radio.checked = false;
+            });
+            // 清除结果显示
+            let resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
         });
     </script>
     <!-- 引入Bootstrap JavaScript -->
