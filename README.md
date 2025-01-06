@@ -1,1 +1,12 @@
 # deco987.github.io
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示一句话</title>
+</head>
+<body>
+    <p>这是通过HTML代码在网页上显示的一句话。</p>
+</body>
+</html>
