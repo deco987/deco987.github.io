@@ -8,7 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
-            background-image: url('https://www.helloimg.com/i/2025/01/07/677cc2802fca1.png'); /* 替换为你的背景图URL */
+            background-image: url('https://www.helloimg.com/i/2025/01/07/677cc44fd73c5.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -20,20 +20,21 @@
             margin: 0;
         }
 
-      .test-container {
-            background-color: rgba(255, 255, 255, 0.8); /* 设置容器背景为白色半透明 */
+     .test-container {
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 40px;
             width: 80%;
             max-width: 800px;
+            margin: 0 auto; /* 新增这一行确保水平居中 */
         }
 
-      .test-selection {
+     .test-selection {
             margin-bottom: 30px;
         }
 
-      .test-card {
+     .test-card {
             background-color: #f0f0f5;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -41,35 +42,35 @@
             margin-bottom: 20px;
         }
 
-      .question {
+     .question {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 15px;
         }
 
-      .form-check {
+     .form-check {
             font-size: 16px;
         }
 
-      .result {
+     .result {
             margin-top: 30px;
             font-weight: bold;
             text-align: center;
         }
 
-      .btn-primary {
+     .btn-primary {
             background-color: #007bff;
             border-color: #007bff;
             padding: 12px 24px;
             font-size: 16px;
         }
 
-      .btn-primary:hover {
+     .btn-primary:hover {
             background-color: #0056b3;
             border-color: #0056b3;
         }
 
-      .btn-clear {
+     .btn-clear {
             margin-top: 15px;
             padding: 12px 24px;
             font-size: 16px;
@@ -346,4 +347,3 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>
