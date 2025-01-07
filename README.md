@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>线上测试</title>
+    <title>fkmt测试</title>
     <!-- 引入Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- 引入Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             background-image: url('https://www.helloimg.com/i/2025/01/07/677cc44fd73c5.jpg');
@@ -58,8 +53,6 @@
 
      .result {
             margin-top: 30px;
-            font-weight: bold;
-            text-align: center;
         }
 
      .btn-primary {
@@ -80,97 +73,142 @@
             font-size: 16px;
         }
 
-     .chart-container {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 400px;
+        h1 {
+            font-size: 24px;
         }
 
-      /* 新增样式，调整标题字号 */
-      h1 {
-            font-size: 24px; /* 缩小标题字号 */
+     .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+     .result-table th,
+     .result-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <div class="test-container">
-        <h1 class="text-center mb-4">线上测试选择</h1>
+        <h1 class="text-center mb-4">测试选择</h1>
         <div class="test-selection">
             <p>请选择要进行的测试：</p>
             <input type="radio" id="test1Radio" name="testSelect" value="test1">
-            <label for="test1Radio">原单选题测试</label><br>
+            <label for="test1Radio">测测你是fkmt几级学者</label><br>
             <input type="radio" id="test2Radio" name="testSelect" value="test2">
-            <label for="test2Radio">测测你是谁</label>
+            <label for="test2Radio">测测你跟fkmt角色的缘分值</label>
         </div>
         <div id="test1Content" style="display: none;">
-            <h1 class="text-center mb-4">原单选题测试</h1>
+            <h1 class="text-center mb-4">测测你是fkmt几级学者</h1>
             <form id="testForm1">
                 <div class="test-card">
                     <div class="question">
-                        <p>问题1：以下哪种动物是哺乳动物？</p>
+                         <p>本测试题只包含开司，斗牌传说，天河街，银与金，赌博霸王传，无赖传涯<br>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）<br>问题1：赤木在麻将界被称为“鬼神赤木”，算上天和街浪子和斗牌传说的全部内容，赤木一共胡过几次役满？</p>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q1a1" name="q1" value="a">
-                        <label class="form-check-label" for="q1a1">蛇</label>
+                        <label class="form-check-label" for="q1a1">1次</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q1a2" name="q1" value="b">
-                        <label class="form-check-label" for="q1a2">猫</label>
+                        <label class="form-check-label" for="q1a2">2次</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q1a3" name="q1" value="c">
-                        <label class="form-check-label" for="q1a3">鸡</label>
+                        <label class="form-check-label" for="q1a3">3次</label>
                     </div>
-                </div>
-                <div class="test-card">
-                    <div class="question">
-                        <p>问题2：我喜欢在团队项目中承担领导角色。</p>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q2a1" name="q2" value="1">
-                        <label class="form-check-label" for="q2a1">最不符合</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q2a2" name="q2" value="2">
-                        <label class="form-check-label" for="q2a2">不太符合</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q2a3" name="q2" value="3">
-                        <label class="form-check-label" for="q2a3">一般</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q2a4" name="q2" value="4">
-                        <label class="form-check-label" for="q2a4">比较符合</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q2a5" name="q2" value="5">
-                        <label class="form-check-label" for="q2a5">最符合</label>
-                    </div>
-                </div>
-                <div class="test-card">
-                    <div class="question">
-                        <p>问题3：中国的首都是？</p>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q3a1" name="q3" value="a">
-                        <label class="form-check-label" for="q3a1">上海</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q3a2" name="q3" value="b">
-                        <label class="form-check-label" for="q3a2">北京</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q3a3" name="q3" value="c">
-                        <label class="form-check-label" for="q3a3">广州</label>
-                    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q1a4" name="q1" value="d">
+					    <label class="form-check-label" for="q1a4">4次</label>
+					</div>
+					<div class="question">
+					     <p>问题2：以下哪种役满类型赤木没有胡过？</p>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q2a1" name="q2" value="a">
+					    <label class="form-check-label" for="q2a1">字一色</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q2a2" name="q2" value="b">
+					    <label class="form-check-label" for="q2a2">大三元</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q2a3" name="q2" value="c">
+					    <label class="form-check-label" for="q2a3">四暗刻</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q2a4" name="q2" value="d">
+					    <label class="form-check-label" for="q2a4">累计役满</label>
+					</div>
+					<div class="question">
+					     <p>问题3：天几乎可以称得上fkmt里最有女人缘的一位主角，问故事刚开始时，天跟几位女性同住？</p>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q3a1" name="q3" value="a">
+					    <label class="form-check-label" for="q3a1">1位</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q3a2" name="q3" value="b">
+					    <label class="form-check-label" for="q3a2">2位</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q3a3" name="q3" value="c">
+					    <label class="form-check-label" for="q3a3">3位</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q3a4" name="q3" value="d">
+					    <label class="form-check-label" for="q3a4">4位</label>
+					</div>
+					<div class="question">
+					     <p>问题4：大家都知道假赤木平山幸雄，是一个跟赤木完全不同类型的天才，只可惜天妒英才英年早逝，年纪轻轻就死在麻将桌上……问平山的忌日是哪一天？</p>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q4a1" name="q4" value="a">
+					    <label class="form-check-label" for="q4a1">3月15号</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q4a2" name="q4" value="b">
+					    <label class="form-check-label" for="q4a2">6月9号</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q4a3" name="q4" value="c">
+					    <label class="form-check-label" for="q4a3">8月1号</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q4a4" name="q4" value="d">
+					    <label class="form-check-label" for="q4a4">11月18号</label>
+					</div>
+					<div class="question">
+					     <p>问题5：鹫巢与赤木对决的那晚被称为“传说的一夜”，在这传说的一夜中，鹫巢大人大概输了多少钱？（算上赤木应得的部分）</p>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q5a1" name="q5" value="a">
+					    <label class="form-check-label" for="q5a1">五亿</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q5a2" name="q5" value="b">
+					    <label class="form-check-label" for="q5a2">六亿</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q5a3" name="q5" value="c">
+					    <label class="form-check-label" for="q5a3">七亿</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q5a4" name="q5" value="d">
+					    <label class="form-check-label" for="q5a5">八亿</label>
+					</div>
+					
+					
+					
+					
                 </div>
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
-            <div class="result" id="result1"></div>
-            <div class="chart-container">
-                <canvas id="test1Chart"></canvas>
-            </div>
+            <div id="result1" class="result"></div>
             <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton1">清除答案</button>
         </div>
         <div id="test2Content" style="display: none;">
@@ -212,10 +250,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
-            <div class="result" id="result2"></div>
-            <div class="chart-container">
-                <canvas id="test2Chart"></canvas>
-            </div>
+            <div id="result2" class="result"></div>
             <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton2">清除答案</button>
         </div>
     </div>
@@ -226,102 +261,39 @@
             const test2Radio = document.getElementById('test2Radio');
             const test1Content = document.getElementById('test1Content');
             const test2Content = document.getElementById('test2Content');
+            const result1 = document.getElementById('result1');
+            const result2 = document.getElementById('result2');
 
-            test1Radio.addEventListener('change', function () {
-                if (this.checked) {
+            const handleTestChange = function () {
+                if (this === test1Radio) {
                     test1Content.style.display = 'block';
                     test2Content.style.display = 'none';
                     const radios1 = document.querySelectorAll('input[type="radio"]', testForm1);
                     radios1.forEach(function (radio) {
                         radio.checked = false;
                     });
-                    const result1Element = document.getElementById('result1');
-                    result1Element.innerHTML = '';
-                    const test1Chart = new Chart(document.getElementById('test1Chart'), {
-                        type: 'bar',
-                        data: {
-                            labels: ['知识得分', '领导能力得分'],
-                            datasets: [{
-                                label: '维度得分',
-                                data: [0, 0],
-                                backgroundColor: 'rgba(54, 162, 235, 0.6)',
-                                borderColor: 'rgba(54, 162, 235, 1)',
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
-                                }
-                            }
-                        }
-                    });
-                }
-            });
-
-            test2Radio.addEventListener('change', function () {
-                if (this.checked) {
+                    result1.innerHTML = '';
+                } else if (this === test2Radio) {
                     test1Content.style.display = 'none';
                     test2Content.style.display = 'block';
                     const radios2 = document.querySelectorAll('input[type="radio"]', testForm2);
                     radios2.forEach(function (radio) {
                         radio.checked = false;
                     });
-                    const result2Element = document.getElementById('result2');
-                    result2Element.innerHTML = '';
-                    const test2Chart = new Chart(document.getElementById('test2Chart'), {
-                        type: 'bar',
-                        data: {
-                            labels: ['兴趣爱好得分', '颜色偏好得分'],
-                            datasets: [{
-                                label: '维度得分',
-                                data: [0, 0],
-                                backgroundColor: 'rgba(255, 99, 132, 0.6)',
-                                borderColor: 'rgba(255, 99, 132, 1)',
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
-                                }
-                            }
-                        }
-                    });
+                    result2.innerHTML = '';
                 }
-            });
+            };
+
+            test1Radio.addEventListener('change', handleTestChange);
+            test2Radio.addEventListener('change', handleTestChange);
 
             const testForm1 = document.getElementById('testForm1');
-            const result1 = document.getElementById('result1');
             const clearButton1 = document.getElementById('clearButton1');
-            const test1Chart = new Chart(document.getElementById('test1Chart'), {
-                type: 'bar',
-                data: {
-                    labels: ['知识得分', '领导能力得分'],
-                    datasets: [{
-                        label: '维度得分',
-                        data: [0, 0],
-                        backgroundColor: 'rgba(54, 162, 235, 0.6)',
-                        borderColor: 'rgba(54, 162, 235, 1)',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
 
             testForm1.addEventListener('submit', function (e) {
                 e.preventDefault();
                 // 定义维度得分
                 let knowledgeScore = 0;
-                let leadershipScore = 0;
 
                 // 获取问题1的答案
                 let q1 = document.querySelector('input[name="q1"]:checked');
@@ -329,33 +301,13 @@
                     knowledgeScore += 1;
                 }
 
-                // 获取问题2的答案
-                let q2 = document.querySelector('input[name="q2"]:checked');
-                if (q2) {
-                    leadershipScore += parseInt(q2.value);
-                }
-
-                // 获取问题3的答案
-                let q3 = document.querySelector('input[name="q3"]:checked');
-                if (q3 && q3.value === 'b') {
-                    knowledgeScore += 1;
-                }
-
                 let resultText = "";
-                if (knowledgeScore >= 2 && leadershipScore >= 7) {
-                    resultText = "你在知识储备和领导能力方面都表现出色！";
-                } else if (knowledgeScore >= 2 && leadershipScore < 7) {
-                    resultText = "你有丰富的知识，但在领导能力方面还有提升空间。";
-                } else if (knowledgeScore < 2 && leadershipScore >= 7) {
-                    resultText = "你具备较强的领导潜力，但知识方面需要加强学习。";
+                if (knowledgeScore >= 1) {
+                    resultText = "你答对了，知识掌握不错！";
                 } else {
-                    resultText = "你在知识和领导能力方面都有进步的空间，继续努力！";
+                    resultText = "你在知识方面还有进步空间。";
                 }
                 result1.innerHTML = resultText;
-
-                // 更新图表数据
-                test1Chart.data.datasets[0].data = [knowledgeScore, leadershipScore];
-                test1Chart.update();
             });
 
             clearButton1.addEventListener('click', function () {
@@ -366,19 +318,70 @@
                 result1.innerHTML = '';
                 test1Content.style.display = 'none';
                 test1Radio.checked = false;
-                // 重置图表数据
-                test1Chart.data.datasets[0].data = [0, 0];
-                test1Chart.update();
             });
 
             const testForm2 = document.getElementById('testForm2');
-            const result2 = document.getElementById('result2');
             const clearButton2 = document.getElementById('clearButton2');
-            const test2Chart = new Chart(document.getElementById('test2Chart'), {
-                type: 'bar',
-                data: {
-                    labels: ['兴趣爱好得分', '颜色偏好得分'],
-                    datasets: [{
-                        label: '维度得分',
-                        data: [0, 0],
-                        backgroundColor: 'rgba(255,
+
+            testForm2.addEventListener('submit', function (e) {
+                e.preventDefault();
+                // 定义维度得分
+                let hobbyScore = 0;
+                let colorPreferenceScore = 0;
+
+                // 获取问题1的答案
+                let q21 = document.querySelector('input[name="q21"]:checked');
+                if (q21) {
+                    if (q21.value === 'a') {
+                        hobbyScore += 1;
+                    } else if (q21.value === 'b') {
+                        hobbyScore += 2;
+                    } else if (q21.value === 'c') {
+                        hobbyScore += 3;
+                    }
+                }
+
+                // 获取问题2的答案
+                let q22 = document.querySelector('input[name="q22"]:checked');
+                if (q22) {
+                    if (q22.value === 'a') {
+                        colorPreferenceScore += 1;
+                    } else if (q22.value === 'b') {
+                        colorPreferenceScore += 2;
+                    } else if (q22.value === 'c') {
+                        colorPreferenceScore += 3;
+                    }
+                }
+
+                let resultTableHTML = '<table class="result-table"><tr><th>维度名称</th><th>结论</th></tr>';
+                // 兴趣爱好得分结论
+                let hobbyResult = "";
+                if (hobbyScore >= 2) {
+                    hobbyResult = "你有丰富的兴趣爱好";
+                } else {
+                    hobbyResult = "你可以尝试培养更多兴趣爱好";
+                }
+                resultTableHTML += `<tr><td>兴趣爱好得分</td><td>${hobbyResult}</td></tr>`;
+                // 颜色偏好得分结论
+                let colorResult = "";
+                if (colorPreferenceScore >= 2) {
+                    colorResult = "你对颜色有明确的偏好";
+                } else {
+                    colorResult = "你对颜色的偏好不太明显";
+                }
+                resultTableHTML += `<tr><td>颜色偏好得分</td><td>${colorResult}</td></tr></table>`;
+                result2.innerHTML = resultTableHTML;
+            });
+
+            clearButton2.addEventListener('click', function () {
+                const radios = document.querySelectorAll('input[type="radio"]', testForm2);
+                radios.forEach(function (radio) {
+                    radio.checked = false;
+                });
+                result2.innerHTML = '';
+                test2Content.style.display = 'none';
+                test2Radio.checked = false;
+            });
+        });
+    </script>
+</body>
