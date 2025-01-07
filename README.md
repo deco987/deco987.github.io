@@ -24,7 +24,7 @@
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 40px;
-            width: 95%;
+            width: 100%;
          // 定义维度得分//max-width: 800px;
             margin: 0 auto;
         }
@@ -42,13 +42,13 @@
         }
 
      .question {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: bold;
             margin-bottom: 15px;
         }
 
      .form-check {
-            font-size: 16px;
+            font-size: 13px;
         }
 
      .result {
@@ -59,7 +59,7 @@
             background-color: #007bff;
             border-color: #007bff;
             padding: 12px 24px;
-            font-size: 16px;
+            font-size: 13px;
         }
 
      .btn-primary:hover {
@@ -70,11 +70,11 @@
      .btn-clear {
             margin-top: 15px;
             padding: 12px 24px;
-            font-size: 16px;
+            font-size: 13px;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 20px;
         }
 
      .result-table {
