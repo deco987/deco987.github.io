@@ -37,7 +37,7 @@
             background-color: #f0f0f5;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            padding: 10px;
+            padding: 15px;
             margin-bottom: 13px;
         }
 
@@ -86,7 +86,7 @@
      .result-table th,
      .result-table td {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
     </style>
@@ -106,11 +106,11 @@
             <h1 class="text-center mb-4">测测你是fkmt几级学者</h1>
             <form id="testForm1">
 					 <div class="form-check">
-						<p>  本测试题只包含开司，斗牌传说，天河街，银与金，赌博霸王传，无赖传涯的内容</p> <p>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）</p>
+						<p>本测试题只包含开司，斗牌传说，天河街，银与金，赌博霸王传，无赖传涯的内容</p> <p>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）</p>
 				</div>
                 <div class="test-card">
                     <div class="question">
-                         <p>本测试题只包含开司，斗牌传说，天河街，银与金，赌博霸王传，无赖传涯<br>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）<br>问题1：赤木在麻将界被称为“鬼神赤木”，算上天和街浪子和斗牌传说的全部内容，赤木一共胡过几次役满？</p>
+                         <p>问题1：赤木在麻将界被称为“鬼神赤木”，算上天和街浪子和斗牌传说的全部内容，赤木一共胡过几次役满？</p>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q1a1" name="q1" value="a">
