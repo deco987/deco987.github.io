@@ -25,7 +25,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 40px;
             width: 100%;
-         // 定义维度得分//max-width: 800px;
+         // 定义维度得分//max-width: 8000px;
             margin: 0 auto;
         }
 
@@ -52,7 +52,7 @@
         }
 
      .result {
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
      .btn-primary {
@@ -105,9 +105,12 @@
         <div id="test1Content" style="display: none;">
             <h1 class="text-center mb-4">测测你是fkmt几级学者</h1>
             <form id="testForm1">
+		    <div class="test-card">
+			   <p>  本测试题只包含开司，斗牌传说，天河街，银与金，赌博霸王传，无赖传涯</p> <p>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）</p>
+			    </div>
                 <div class="test-card">
                     <div class="question">
-                         <p>本测试题只包含开司，斗牌传说，天河街，银与金，赌博霸王传，无赖传涯<br>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）<br>问题1：赤木在麻将界被称为“鬼神赤木”，算上天和街浪子和斗牌传说的全部内容，赤木一共胡过几次役满？</p>
+                         <p>问题1：赤木在麻将界被称为“鬼神赤木”，算上天和街浪子和斗牌传说的全部内容，赤木一共胡过几次役满？</p>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q1a1" name="q1" value="a">
@@ -125,6 +128,8 @@
 					    <input class="form-check-input" type="radio" id="q1a4" name="q1" value="d">
 					    <label class="form-check-label" for="q1a4">4次</label>
 					</div>
+					</div>
+					<div class="test-card">
 					<div class="question">
 					     <p>问题2：以下哪种役满类型赤木没有胡过？</p>
 					</div>
@@ -144,6 +149,8 @@
 					    <input class="form-check-input" type="radio" id="q2a4" name="q2" value="d">
 					    <label class="form-check-label" for="q2a4">累计役满</label>
 					</div>
+					</div>
+					<div class="test-card">
 					<div class="question">
 					     <p>问题3：天几乎可以称得上fkmt里最有女人缘的一位主角，问故事刚开始时，天跟几位女性同住？</p>
 					</div>
@@ -163,6 +170,8 @@
 					    <input class="form-check-input" type="radio" id="q3a4" name="q3" value="d">
 					    <label class="form-check-label" for="q3a4">4位</label>
 					</div>
+					</div>
+					<div class="test-card">
 					<div class="question">
 					     <p>问题4：大家都知道假赤木平山幸雄，是一个跟赤木完全不同类型的天才，只可惜天妒英才英年早逝，年纪轻轻就死在麻将桌上……问平山的忌日是哪一天？</p>
 					</div>
@@ -182,6 +191,8 @@
 					    <input class="form-check-input" type="radio" id="q4a4" name="q4" value="d">
 					    <label class="form-check-label" for="q4a4">11月18号</label>
 					</div>
+					</div>
+					<div class="test-card">
 					<div class="question">
 					     <p>问题5：鹫巢与赤木对决的那晚被称为“传说的一夜”，在这传说的一夜中，鹫巢大人大概输了多少钱？（算上赤木应得的部分）</p>
 					</div>
@@ -201,7 +212,7 @@
 					    <input class="form-check-input" type="radio" id="q5a4" name="q5" value="d">
 					    <label class="form-check-label" for="q5a5">八亿</label>
 					</div>
-					
+					</div>
 					
 					
 					
