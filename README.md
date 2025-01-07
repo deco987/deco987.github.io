@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -6,6 +8,8 @@
     <!-- 引入Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- 引入Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             background-image: url('https://www.helloimg.com/i/2025/01/07/677cc44fd73c5.jpg');
@@ -21,17 +25,17 @@
         }
 
      .test-container {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 40px;
             width: 80%;
             max-width: 800px;
-            margin: 0 auto; /* 新增这一行确保水平居中 */
+            margin: 0 auto;
         }
 
      .test-selection {
-            margin-bottom: 23px;
+            margin-bottom: 30px;
         }
 
      .test-card {
@@ -74,6 +78,17 @@
             margin-top: 15px;
             padding: 12px 24px;
             font-size: 16px;
+        }
+
+     .chart-container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+      /* 新增样式，调整标题字号 */
+      h1 {
+            font-size: 24px; /* 缩小标题字号 */
         }
     </style>
 </head>
@@ -153,6 +168,9 @@
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div class="result" id="result1"></div>
+            <div class="chart-container">
+                <canvas id="test1Chart"></canvas>
+            </div>
             <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton1">清除答案</button>
         </div>
         <div id="test2Content" style="display: none;">
@@ -195,6 +213,9 @@
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div class="result" id="result2"></div>
+            <div class="chart-container">
+                <canvas id="test2Chart"></canvas>
+            </div>
             <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton2">清除答案</button>
         </div>
     </div>
@@ -216,6 +237,26 @@
                     });
                     const result1Element = document.getElementById('result1');
                     result1Element.innerHTML = '';
+                    const test1Chart = new Chart(document.getElementById('test1Chart'), {
+                        type: 'bar',
+                        data: {
+                            labels: ['知识得分', '领导能力得分'],
+                            datasets: [{
+                                label: '维度得分',
+                                data: [0, 0],
+                                backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                                borderColor: 'rgba(54, 162, 235, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
                 }
             });
 
@@ -229,12 +270,52 @@
                     });
                     const result2Element = document.getElementById('result2');
                     result2Element.innerHTML = '';
+                    const test2Chart = new Chart(document.getElementById('test2Chart'), {
+                        type: 'bar',
+                        data: {
+                            labels: ['兴趣爱好得分', '颜色偏好得分'],
+                            datasets: [{
+                                label: '维度得分',
+                                data: [0, 0],
+                                backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
                 }
             });
 
             const testForm1 = document.getElementById('testForm1');
             const result1 = document.getElementById('result1');
             const clearButton1 = document.getElementById('clearButton1');
+            const test1Chart = new Chart(document.getElementById('test1Chart'), {
+                type: 'bar',
+                data: {
+                    labels: ['知识得分', '领导能力得分'],
+                    datasets: [{
+                        label: '维度得分',
+                        data: [0, 0],
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
 
             testForm1.addEventListener('submit', function (e) {
                 e.preventDefault();
@@ -271,6 +352,10 @@
                     resultText = "你在知识和领导能力方面都有进步的空间，继续努力！";
                 }
                 result1.innerHTML = resultText;
+
+                // 更新图表数据
+                test1Chart.data.datasets[0].data = [knowledgeScore, leadershipScore];
+                test1Chart.update();
             });
 
             clearButton1.addEventListener('click', function () {
@@ -281,69 +366,19 @@
                 result1.innerHTML = '';
                 test1Content.style.display = 'none';
                 test1Radio.checked = false;
+                // 重置图表数据
+                test1Chart.data.datasets[0].data = [0, 0];
+                test1Chart.update();
             });
 
             const testForm2 = document.getElementById('testForm2');
             const result2 = document.getElementById('result2');
             const clearButton2 = document.getElementById('clearButton2');
-
-            testForm2.addEventListener('submit', function (e) {
-                e.preventDefault();
-                // 定义维度得分
-                let hobbyScore = 0;
-                let colorPreferenceScore = 0;
-
-                // 获取问题1的答案
-                let q21 = document.querySelector('input[name="q21"]:checked');
-                if (q21) {
-                    if (q21.value === 'a') {
-                        hobbyScore += 1;
-                    } else if (q21.value === 'b') {
-                        hobbyScore += 2;
-                    } else if (q21.value === 'c') {
-                        hobbyScore += 3;
-                    }
-                }
-
-                // 获取问题2的答案
-                let q22 = document.querySelector('input[name="q22"]:checked');
-                if (q22) {
-                    if (q22.value === 'a') {
-                        colorPreferenceScore += 1;
-                    } else if (q22.value === 'b') {
-                        colorPreferenceScore += 2;
-                    } else if (q22.value === 'c') {
-                        colorPreferenceScore += 3;
-                    }
-                }
-
-                let resultText = "";
-                if (hobbyScore >= 4 && colorPreferenceScore >= 4) {
-                    resultText = "你有着丰富的兴趣爱好和独特的颜色偏好！";
-                } else if (hobbyScore >= 4 && colorPreferenceScore < 4) {
-                    resultText = "你兴趣爱好广泛，但颜色偏好比较常规。";
-                } else if (hobbyScore < 4 && colorPreferenceScore >= 4) {
-                    resultText = "你有独特的颜色偏好，但兴趣爱好有待丰富。";
-                } else {
-                    resultText = "你在兴趣爱好和颜色偏好方面都有探索的空间。";
-                }
-                result2.innerHTML = resultText;
-            });
-
-            clearButton2.addEventListener('click', function () {
-                const radios = document.querySelectorAll('input[type="radio"]', testForm2);
-                radios.forEach(function (radio) {
-                    radio.checked = false;
-                });
-                result2.innerHTML = '';
-                test2Content.style.display = 'none';
-                test2Radio.checked = false;
-            });
-        });
-    </script>
-    <!-- 引入Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
-
+            const test2Chart = new Chart(document.getElementById('test2Chart'), {
+                type: 'bar',
+                data: {
+                    labels: ['兴趣爱好得分', '颜色偏好得分'],
+                    datasets: [{
+                        label: '维度得分',
+                        data: [0, 0],
+                        backgroundColor: 'rgba(255,
