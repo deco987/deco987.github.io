@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fkmt测试</title>
+    <title>线上测试</title>
     <!-- 引入Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-image: url('https://www.helloimg.com/i/2025/01/07/677cc2802fca1.png'); /* 替换为你的背景图URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,60 +20,80 @@
             margin: 0;
         }
 
-     .test-container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+      .test-container {
+            background-color: rgba(255, 255, 255, 0.8); /* 设置容器背景为白色半透明 */
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
             width: 80%;
-            max-width: 600px;
+            max-width: 800px;
         }
 
-     .question {
+      .test-selection {
+            margin-bottom: 30px;
+        }
+
+      .test-card {
+            background-color: #f0f0f5;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin-bottom: 20px;
         }
 
-     .result {
-            margin-top: 20px;
+      .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+      .form-check {
+            font-size: 16px;
+        }
+
+      .result {
+            margin-top: 30px;
             font-weight: bold;
             text-align: center;
         }
 
-     .btn-primary {
+      .btn-primary {
             background-color: #007bff;
             border-color: #007bff;
+            padding: 12px 24px;
+            font-size: 16px;
         }
 
-     .btn-primary:hover {
+      .btn-primary:hover {
             background-color: #0056b3;
             border-color: #0056b3;
         }
 
-     .btn-clear {
-            margin-top: 10px;
-        }
-
-     .test-selection {
-            margin-bottom: 20px;
+      .btn-clear {
+            margin-top: 15px;
+            padding: 12px 24px;
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
     <div class="test-container">
-        <h1 class="text-center mb-4">测试题选择</h1>
+        <h1 class="text-center mb-4">线上测试选择</h1>
         <div class="test-selection">
-            <p>请选择想要进行的测试：</p>
+            <p>请选择要进行的测试：</p>
             <input type="radio" id="test1Radio" name="testSelect" value="test1">
-            <label for="test1Radio">测测你是fkmt中的谁</label><br>
+            <label for="test1Radio">原单选题测试</label><br>
             <input type="radio" id="test2Radio" name="testSelect" value="test2">
-            <label for="test2Radio">测测你跟fkmt角色的缘分值</label>
+            <label for="test2Radio">测测你是谁</label>
         </div>
         <div id="test1Content" style="display: none;">
-            <h1 class="text-center mb-4">测测你是fkmt中的谁</h1>
+            <h1 class="text-center mb-4">原单选题测试</h1>
             <form id="testForm1">
-                <div class="question">
-                    <p>在每个题目中，选择一个最符合你自己的选项，不能遗漏。<br>注意:请按第一印象做最快的选择。<br>问题1：如果你中了500万大奖，你会选择？</p>
+                <div class="test-card">
+                    <div class="question">
+                        <p>问题1：以下哪种动物是哺乳动物？</p>
+                    </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q1a1" name="q1" value="a">
                         <label class="form-check-label" for="q1a1">蛇</label>
@@ -86,8 +107,10 @@
                         <label class="form-check-label" for="q1a3">鸡</label>
                     </div>
                 </div>
-                <div class="question">
-                    <p>问题2：我喜欢在团队项目中承担领导角色。</p>
+                <div class="test-card">
+                    <div class="question">
+                        <p>问题2：我喜欢在团队项目中承担领导角色。</p>
+                    </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q2a1" name="q2" value="1">
                         <label class="form-check-label" for="q2a1">最不符合</label>
@@ -109,8 +132,10 @@
                         <label class="form-check-label" for="q2a5">最符合</label>
                     </div>
                 </div>
-                <div class="question">
-                    <p>问题3：中国的首都是？</p>
+                <div class="test-card">
+                    <div class="question">
+                        <p>问题3：中国的首都是？</p>
+                    </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q3a1" name="q3" value="a">
                         <label class="form-check-label" for="q3a1">上海</label>
@@ -127,57 +152,49 @@
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div class="result" id="result1"></div>
-            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton1">返回选题</button>
+            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton1">清除答案</button>
         </div>
         <div id="test2Content" style="display: none;">
-            <h1 class="text-center mb-4">测测你跟fkmt角色的缘分值</h1>
+            <h1 class="text-center mb-4">测测你是谁</h1>
             <form id="testForm2">
-                <div class="question">
-                   <p>在每个题目中，选择一个最符合你自己的选项，不能遗漏。<br>注意:请按第一印象做最快的选择。<br>问题1：那个选项让你觉得更加困难？</p>
+                <div class="test-card">
+                    <div class="question">
+                        <p>问题1：当你独处时，你通常会做什么？</p>
+                    </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a1" name="q21" value="a">
-                        <label class="form-check-label" for="q21a1">被喜欢的人讨厌</label>
+                        <label class="form-check-label" for="q21a1">阅读书籍</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a2" name="q21" value="b">
-                        <label class="form-check-label" for="q21a2">失败，在我想达成的事情上</label>
+                        <label class="form-check-label" for="q21a2">听音乐</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a3" name="q21" value="c">
-                        <label class="form-check-label" for="q21a3">孤独，不受人欢迎</label>
+                        <label class="form-check-label" for="q21a3">做运动</label>
                     </div>
-					<div class="form-check">
-					    <input class="form-check-input" type="radio" id="q21a2" name="q21" value="d">
-					    <label class="form-check-label" for="q21a4">失去我认为重要的东西</label>
-					</div>
                 </div>
-                <div class="question">
-                    <p>问题2：哪个选项更符合你？</p>
+                <div class="test-card">
+                    <div class="question">
+                        <p>问题2：你最喜欢的颜色是？</p>
+                    </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q22a1" name="q22" value="a">
-                        <label class="form-check-label" for="q22a1">我更擅长利用性格魅力鼓励别人</label>
+                        <label class="form-check-label" for="q22a1">蓝色</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q22a2" name="q22" value="b">
-                        <label class="form-check-label" for="q22a2">我更擅长在复杂的环境中随机应变</label>
+                        <label class="form-check-label" for="q22a2">红色</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q22a3" name="q22" value="c">
-                        <label class="form-check-label" for="q22a3">我更擅长指定周密的计划并严格执行</label>
+                        <label class="form-check-label" for="q22a3">绿色</label>
                     </div>
-					<div class="form-check">
-					    <input class="form-check-input" type="radio" id="q22a3" name="q22" value="d">
-					    <label class="form-check-label" for="q22a4">我更相信自己有转危为安的能力</label>
-					</div>
-					<div class="form-check">
-					    <input class="form-check-input" type="radio" id="q22a3" name="q22" value="e">
-					    <label class="form-check-label" for="q22a5">我的情绪更稳定，冷静且能容忍</label>
-					</div>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div class="result" id="result2"></div>
-            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton2">返回选题</button>
+            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton2">清除答案</button>
         </div>
     </div>
 
@@ -220,35 +237,37 @@
 
             testForm1.addEventListener('submit', function (e) {
                 e.preventDefault();
-                let score = 0;
+                // 定义维度得分
+                let knowledgeScore = 0;
+                let leadershipScore = 0;
 
                 // 获取问题1的答案
                 let q1 = document.querySelector('input[name="q1"]:checked');
-                if (q1 && q1.value === 'a') {
-                    score++;
+                if (q1 && q1.value === 'b') {
+                    knowledgeScore += 1;
                 }
 
                 // 获取问题2的答案
                 let q2 = document.querySelector('input[name="q2"]:checked');
                 if (q2) {
-                    score += parseInt(q2.value);
+                    leadershipScore += parseInt(q2.value);
                 }
 
                 // 获取问题3的答案
                 let q3 = document.querySelector('input[name="q3"]:checked');
                 if (q3 && q3.value === 'b') {
-                    score++;
+                    knowledgeScore += 1;
                 }
 
                 let resultText = "";
-                if (score >= 7) {
-                    resultText = "恭喜你，在原单选题测试中表现出色！";
-                } else if (score >= 4 && score < 7) {
-                    resultText = "很不错，答对了大部分题目，继续保持！";
-                } else if (score >= 2 && score < 4) {
-                    resultText = "答对了一些题目，你还可以在这些方面进一步探索哦。";
+                if (knowledgeScore >= 2 && leadershipScore >= 7) {
+                    resultText = "你在知识储备和领导能力方面都表现出色！";
+                } else if (knowledgeScore >= 2 && leadershipScore < 7) {
+                    resultText = "你有丰富的知识，但在领导能力方面还有提升空间。";
+                } else if (knowledgeScore < 2 && leadershipScore >= 7) {
+                    resultText = "你具备较强的领导潜力，但知识方面需要加强学习。";
                 } else {
-                    resultText = "很遗憾，原单选题测试不太理想，别气馁，总结经验下次会更好！";
+                    resultText = "你在知识和领导能力方面都有进步的空间，继续努力！";
                 }
                 result1.innerHTML = resultText;
             });
@@ -267,37 +286,48 @@
             const result2 = document.getElementById('result2');
             const clearButton2 = document.getElementById('clearButton2');
 
-         testForm2.addEventListener('submit', function (e) {
-             e.preventDefault();
-             let score = 0;
-         
-             // 获取问题1的答案
-             let q21 = document.querySelector('input[name="q21"]:checked');
-             if (q21 && q21.value === 'b') {
-                 score++;
-             }
-         
-             // 获取问题2的答案
-             let q22 = document.querySelector('input[name="q22"]:checked');
-             if (q22 && q22.value === 'b') {
-                 score++;
-             }
-         
-             // 获取问题3的答案
-          
-         
-             let resultText = "";
-             if (score >= 7) {
-                 resultText = "恭喜你，在原单选题测试中表现出色！";
-             } else if (score >= 4 && score < 7) {
-                 resultText = "很不错，答对了大部分题目，继续保持！";
-             } else if (score >= 2 && score < 4) {
-                 resultText = "答对了一些题目，你还可以在这些方面进一步探索哦。";
-             } else {
-                 resultText = "很遗憾，原单选题测试不太理想，别气馁，总结经验下次会更好！";
-             }
-             result2.innerHTML = resultText;
-         });
+            testForm2.addEventListener('submit', function (e) {
+                e.preventDefault();
+                // 定义维度得分
+                let hobbyScore = 0;
+                let colorPreferenceScore = 0;
+
+                // 获取问题1的答案
+                let q21 = document.querySelector('input[name="q21"]:checked');
+                if (q21) {
+                    if (q21.value === 'a') {
+                        hobbyScore += 1;
+                    } else if (q21.value === 'b') {
+                        hobbyScore += 2;
+                    } else if (q21.value === 'c') {
+                        hobbyScore += 3;
+                    }
+                }
+
+                // 获取问题2的答案
+                let q22 = document.querySelector('input[name="q22"]:checked');
+                if (q22) {
+                    if (q22.value === 'a') {
+                        colorPreferenceScore += 1;
+                    } else if (q22.value === 'b') {
+                        colorPreferenceScore += 2;
+                    } else if (q22.value === 'c') {
+                        colorPreferenceScore += 3;
+                    }
+                }
+
+                let resultText = "";
+                if (hobbyScore >= 4 && colorPreferenceScore >= 4) {
+                    resultText = "你有着丰富的兴趣爱好和独特的颜色偏好！";
+                } else if (hobbyScore >= 4 && colorPreferenceScore < 4) {
+                    resultText = "你兴趣爱好广泛，但颜色偏好比较常规。";
+                } else if (hobbyScore < 4 && colorPreferenceScore >= 4) {
+                    resultText = "你有独特的颜色偏好，但兴趣爱好有待丰富。";
+                } else {
+                    resultText = "你在兴趣爱好和颜色偏好方面都有探索的空间。";
+                }
+                result2.innerHTML = resultText;
+            });
 
             clearButton2.addEventListener('click', function () {
                 const radios = document.querySelectorAll('input[type="radio"]', testForm2);
