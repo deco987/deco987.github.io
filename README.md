@@ -98,7 +98,7 @@
         <div class="test-selection">
             <p>请选择要进行的测试：</p>
             <input type="radio" id="test1Radio" name="testSelect" value="test1">
-            <label for="test1Radio">测测你是fkmt几级学者</label><br>
+            <label for="test1Radio">测测你是fkmt几级学者（缓慢更新中）</label><br>
             <input type="radio" id="test2Radio" name="testSelect" value="test2">
             <label for="test2Radio">测测你跟fkmt角色的缘分值</label>
         </div>
@@ -106,7 +106,7 @@
             <h1 class="text-center mb-4">测测你是fkmt几级学者</h1>
             <form id="testForm1">
 					 <div class="form-check">
-						<p>本测试题只包含开司，斗牌传说，天河街，银与金，赌博霸王传，无赖传涯的内容</p> <p>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）</p>
+						<p>本测试题只包含开司，斗牌，天河街，银与金，霸王传，涯的内容</p> <p>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）</p>
 				</div>
                 <div class="test-card">
                     <div class="question">
@@ -220,45 +220,129 @@
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div id="result1" class="result"></div>
-            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton1">清除答案</button>
+            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton1">返回选题</button>
         </div>
         <div id="test2Content" style="display: none;">
-            <h1 class="text-center mb-4">测测你是谁</h1>
+            <h1 class="text-center mb-4">测测你跟fkmt角色的缘分值</h1>
             <form id="testForm2">
+				<div class="form-check">
+						<p>本测试题只包含开司，斗牌，天河街，银与金，霸王传，涯的内容</p> <p>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）</p>
+				</div>
                 <div class="test-card">
                     <div class="question">
-                        <p>问题1：当你独处时，你通常会做什么？</p>
+                        <p>问题1：下列哪项让你觉得更加困难？</p>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a1" name="q21" value="a">
-                        <label class="form-check-label" for="q21a1">阅读书籍</label>
+                        <label class="form-check-label" for="q21a1">被喜欢的人讨厌</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a2" name="q21" value="b">
-                        <label class="form-check-label" for="q21a2">听音乐</label>
+                        <label class="form-check-label" for="q21a2">失去重要的人</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a3" name="q21" value="c">
-                        <label class="form-check-label" for="q21a3">做运动</label>
+                        <label class="form-check-label" for="q21a3">孤独，不被人群接纳</label>
                     </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q21a4" name="q21" value="d">
+					    <label class="form-check-label" for="q21a4">拼尽全力却最终失败</label>
+					</div>
                 </div>
                 <div class="test-card">
                     <div class="question">
-                        <p>问题2：你最喜欢的颜色是？</p>
+                        <p>问题2：你的人际关系怎么样？</p>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q22a1" name="q22" value="a">
-                        <label class="form-check-label" for="q22a1">蓝色</label>
+                        <label class="form-check-label" for="q22a1">我总是能在各个领域交到很多朋友</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q22a2" name="q22" value="b">
-                        <label class="form-check-label" for="q22a2">红色</label>
+                        <label class="form-check-label" for="q22a2">我很喜欢认识新人，只是结果有时候不尽如人意</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q22a3" name="q22" value="c">
-                        <label class="form-check-label" for="q22a3">绿色</label>
+                        <label class="form-check-label" for="q22a3">我不太热衷于交朋友，有那么几个知心朋友就够了</label>
                     </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q22a4" name="q22" value="d">
+					    <label class="form-check-label" for="q22a4">我平等地讨厌每一个人，比起跟人相处，我更喜欢跟猫狗玩</label>
+					</div>
                 </div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题3：你对自己未来的人生有规划吗？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q23a1" name="q23" value="a">
+				        <label class="form-check-label" for="q23a1">我是个活在当下的人，对未来没什么实感</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q23a2" name="q23" value="b">
+				        <label class="form-check-label" for="q23a2">我只会计划一下人生大事，比如去哪里工作，是否结婚……剩下的就随机应变了</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q23a3" name="q23" value="c">
+				        <label class="form-check-label" for="q23a3">我喜欢在无聊的时候计划一下我的未来，不过不会想得很全面，也不一定会去执行</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q23a4" name="q23" value="d">
+					    <label class="form-check-label" for="q23a4">我对未来有着清晰的认识和预感，我知道自己想要成为什么样的人，并且在为那个目标而努力着</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题4：你如何看待赌博？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q24a1" name="q24" value="a">
+				        <label class="form-check-label" for="q24a1">赌博是很可怕的东西，看看赌博相关的作品就是我的极限了</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q24a2" name="q24" value="b">
+				        <label class="form-check-label" for="q24a2">小赌怡情，我偶尔会跟熟人打打赌钱的扑克麻将，不会赌得很大</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q24a3" name="q24" value="c">
+				        <label class="form-check-label" for="q24a3">赌博就是胜负，哪怕在平时我也会跟朋友就某事赌两块钱</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q24a4" name="q24" value="d">
+					    <label class="form-check-label" for="q24a4">我很想试试fkmt中那种惊险刺激的赌博，哪怕输掉的代价很沉重也无所谓</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题5：假如你有一千块钱，以下几个赌局中，你会参加哪一个？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q25a1" name="q25" value="a">
+				        <label class="form-check-label" for="q25a1">猜数字赌局，从1-10中猜一个数字，猜对了奖励一万块钱，猜错了失去一千块钱</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q25a2" name="q25" value="b">
+				        <label class="form-check-label" for="q25a2">猜骰子大小的赌局，猜对了奖励五百块，猜错了失去五百块</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q25a3" name="q25" value="c">
+				        <label class="form-check-label" for="q25a3">根据言行判断人是否说谎的赌局，判断对了奖励八百块，错了失去八百块</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q25a4" name="q25" value="d">
+					    <label class="form-check-label" for="q25a4">规则复杂的私人赌局，输赢金额均无上限</label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q25a5" name="q25" value="e">
+					    <label class="form-check-label" for="q25a5">我一个都不会参加</label>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div id="result2" class="result"></div>
