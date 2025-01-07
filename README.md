@@ -21,7 +21,7 @@
         }
 
      .test-container {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 40px;
@@ -31,7 +31,7 @@
         }
 
      .test-selection {
-            margin-bottom: 30px;
+            margin-bottom: 23px;
         }
 
      .test-card {
