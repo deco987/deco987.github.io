@@ -24,8 +24,8 @@
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 40px;
-            width: 80%;
-            max-width: 800px;
+            width: 95%;
+         // 定义维度得分//max-width: 800px;
             margin: 0 auto;
         }
 
