@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
@@ -51,7 +50,7 @@
         }
 
       .form-check {
-            font-size: 14px;
+            font-size: 15px;
 			margin-bottom: 12px; 
         }
 
@@ -96,6 +95,22 @@
 			    text-align: center;
 			    font-size: 13px;
         }
+		.option-table {
+		            width: 100%;
+		            border-collapse: collapse;
+		            margin-top: 5px;
+		        }
+		
+		      .option-table tr {
+		            border-bottom: 1px solid #ddd;
+		        }
+		
+		      .option-table td {
+		            padding: 8px;
+		            text-align: left;
+		        }
+		
+		
     </style>
 </head>
 
@@ -238,22 +253,24 @@
                     <div class="question">
                         <p>问题 1：下列哪项让你觉得更加困难？</p>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q21a1" name="q21" value="a">
-                        <label class="form-check-label" for="q21a1">迷失，忘却自己的本心</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q21a2" name="q21" value="b">
-                        <label class="form-check-label" for="q21a2">失去重要的人或东西</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q21a3" name="q21" value="c">
-                        <label class="form-check-label" for="q21a3">孤独，不被人群接纳</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="q21a4" name="q21" value="d">
-                        <label class="form-check-label" for="q21a4">拼尽全力却最终失败</label>
-                    </div>
+                    <table class="option-table">
+                        <tr>
+                            <td><input class="form-check-input" type="radio" id="q21a1" name="q21" value="a">
+                                <label class="form-check-label" for="q21a1">迷失，忘却自己的本心</label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-check-input" type="radio" id="q21a2" name="q21" value="b">
+                                <label class="form-check-label" for="q21a2">失去重要的人或东西</label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-check-input" type="radio" id="q21a3" name="q21" value="c">
+                                <label class="form-check-label" for="q21a3">孤独，不被人群接纳</label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-check-input" type="radio" id="q21a4" name="q21" value="d">
+                                <label class="form-check-label" for="q21a4">拼尽全力却最终失败</label></td>
+                        </tr>
+                    </table>
                 </div>
 				<div class="test-card">
 				    <div class="question">
