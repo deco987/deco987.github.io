@@ -105,7 +105,7 @@
         <div class="test-selection">
             <p>请选择要进行的测试：</p>
             <input type="radio" id="test1Radio" name="testSelect" value="test1">
-            <label for="test1Radio">测测你是 fkmt 几级学者（施工中）</label><br>
+            <label for="test1Radio">你是 fkmt 几级学者（施工中）</label><br>
             <input type="radio" id="test2Radio" name="testSelect" value="test2">
             <label for="test2Radio">测测你跟 fkmt 角色的缘分值</label>
         </div>
