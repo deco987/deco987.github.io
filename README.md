@@ -101,7 +101,7 @@
         <div class="test-selection">
             <p>请选择要进行的测试：</p>
             <input type="radio" id="test1Radio" name="testSelect" value="test1">
-            <label for="test1Radio">你是 fkmt 几级学者（施工中）</label><br>
+            <label for="test1Radio">测测你是 fkmt 几级学者（施工中）</label><br>
             <input type="radio" id="test2Radio" name="testSelect" value="test2">
             <label for="test2Radio">测测你跟 fkmt 角色的缘分值</label>
         </div>
@@ -133,6 +133,94 @@
                         <label class="form-check-label" for="q1a4">4 次</label>
                     </div>
                 </div>
+				
+				<div class="test-card">
+				<div class="question">
+				     <p>问题2：以下哪种役满类型赤木没有胡过？</p>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q2a1" name="q2" value="a">
+				    <label class="form-check-label" for="q2a1">字一色</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q2a2" name="q2" value="b">
+				    <label class="form-check-label" for="q2a2">大三元</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q2a3" name="q2" value="c">
+				    <label class="form-check-label" for="q2a3">四暗刻</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q2a4" name="q2" value="d">
+				    <label class="form-check-label" for="q2a4">累计役满</label>
+				</div>
+				</div>
+				<div class="test-card">
+				<div class="question">
+				     <p>问题3：天几乎可以称得上fkmt里最有女人缘的一位主角，问故事刚开始时，天跟几位女性同住？</p>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q3a1" name="q3" value="a">
+				    <label class="form-check-label" for="q3a1">1位</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q3a2" name="q3" value="b">
+				    <label class="form-check-label" for="q3a2">2位</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q3a3" name="q3" value="c">
+				    <label class="form-check-label" for="q3a3">3位</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q3a4" name="q3" value="d">
+				    <label class="form-check-label" for="q3a4">4位</label>
+				</div>
+				</div>
+				<div class="test-card">
+				<div class="question">
+				     <p>问题4：大家都知道假赤木平山幸雄，是一个跟赤木完全不同类型的天才，只可惜天妒英才英年早逝，年纪轻轻就死在麻将桌上……问平山的忌日是哪一天？</p>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q4a1" name="q4" value="a">
+				    <label class="form-check-label" for="q4a1">3月15号</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q4a2" name="q4" value="b">
+				    <label class="form-check-label" for="q4a2">6月9号</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q4a3" name="q4" value="c">
+				    <label class="form-check-label" for="q4a3">8月1号</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q4a4" name="q4" value="d">
+				    <label class="form-check-label" for="q4a4">11月18号</label>
+				</div>
+				</div>
+				<div class="test-card">
+				<div class="question">
+				     <p>问题5：鹫巢与赤木对决的那晚被称为“传说的一夜”，在这传说的一夜中，鹫巢大人大概输了多少钱？（算上赤木应得的部分）</p>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q5a1" name="q5" value="a">
+				    <label class="form-check-label" for="q5a1">五亿</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q5a2" name="q5" value="b">
+				    <label class="form-check-label" for="q5a2">六亿</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q5a3" name="q5" value="c">
+				    <label class="form-check-label" for="q5a3">七亿</label>
+				</div>
+				<div class="form-check">
+				    <input class="form-check-input" type="radio" id="q5a4" name="q5" value="d">
+				    <label class="form-check-label" for="q5a5">八亿</label>
+				</div>
+								
+				
+				
+				
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div id="result1" class="result"></div>
