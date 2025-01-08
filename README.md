@@ -1,3 +1,5 @@
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +11,7 @@
         body {
             background-image: url('https://www.helloimg.com/i/2025/01/07/677cc44fd73c5.jpg'); // 修正背景图片路径
             background-size: cover;
+			background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
@@ -48,10 +51,11 @@
 
       .form-check {
             font-size: 13px;
+			margin-bottom: 5px; 
         }
 
       .result {
-            margin-top: 20px;
+            margin-top: 13px;
         }
 
       .btn-primary {
@@ -737,18 +741,54 @@
 			
 			
 			
-                kaisi = kaisi * 100 / 12;
-                heye = heye * 100 / 12;
-                chimu = chimu * 100 / 12;
-                jiuchao = jiuchao * 100 / 12;
-                pingshan = pingshan * 100 / 12;
-                shenyu = shenyu * 100 / 12;
-                tian = tian * 100 / 12;
-                ling = ling * 100 / 12;
-                biao = biao * 100 / 12;
-                ya = ya * 100 / 12;
-                yiner = yiner * 100 / 12;
-                sentian = sentian * 100 / 12;
+               // 假设这些变量在之前的代码中已经根据用户回答进行了相应的赋值
+               // 开司
+               kaisi = kaisi * 140 / 12;
+               kaisi = kaisi > 100? 100 : kaisi;
+               
+               // heye
+               heye = heye * 140 / 12;
+               heye = heye > 100? 100 : heye;
+               
+               // chimu
+               chimu = chimu * 140 / 12;
+               chimu = chimu > 100? 100 : chimu;
+               
+               // jiuchao
+               jiuchao = jiuchao * 140 / 12;
+               jiuchao = jiuchao > 100? 100 : jiuchao;
+               
+               // pingshan
+               pingshan = pingshan * 140 / 12;
+               pingshan = pingshan > 100? 100 : pingshan;
+               
+               // shenyu
+               shenyu = shenyu * 140 / 12;
+               shenyu = shenyu > 100? 100 : shenyu;
+               
+               // tian
+               tian = tian * 140 / 12;
+               tian = tian > 100? 100 : tian;
+               
+               // ling
+               ling = ling * 140 / 12;
+               ling = ling > 100? 100 : ling;
+               
+               // biao
+               biao = biao * 140 / 12;
+               biao = biao > 100? 100 : biao;
+               
+               // ya
+               ya = ya * 140 / 12;
+               ya = ya > 100? 100 : ya;
+               
+               // yiner
+               yiner = yiner * 140 / 12;
+               yiner = yiner > 100? 100 : yiner;
+               
+               // sentian
+               sentian = sentian * 140 / 12;
+               sentian = sentian > 100? 100 : sentian;
 
                 let resultTableHTML = '<table class="result-table"><tr><th>角色</th><th>缘分值</th><th>结论</th></tr>';
 
@@ -906,3 +946,5 @@
         });
     </script>
 </body>
+
+</html>
