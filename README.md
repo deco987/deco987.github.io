@@ -225,20 +225,17 @@
         <div id="test2Content" style="display: none;">
             <h1 class="text-center mb-4">测测你跟fkmt角色的缘分值</h1>
             <form id="testForm2">
-				<div class="form-check">
-						<p>本测试题只包含开司，斗牌，天河街，银与金，霸王传，涯的内容</p> <p>注意:每题都有且只有一个选项正确（不会可以蒙，运势对fkmt人也是至关重要的）</p>
-				</div>
                 <div class="test-card">
                     <div class="question">
                         <p>问题1：下列哪项让你觉得更加困难？</p>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a1" name="q21" value="a">
-                        <label class="form-check-label" for="q21a1">被喜欢的人讨厌</label>
+                        <label class="form-check-label" for="q21a1">迷失，忘却自己的本心</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a2" name="q21" value="b">
-                        <label class="form-check-label" for="q21a2">失去重要的人</label>
+                        <label class="form-check-label" for="q21a2">失去重要的人或东西</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id="q21a3" name="q21" value="c">
@@ -337,16 +334,160 @@
 					    <label class="form-check-label" for="q25a5">我一个都不会参加</label>
 					</div>
 				</div>
-				
-				
-				
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题6：如果你在赌局中已经取得了胜利，你会选择再来一次吗？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q26a1" name="q26" value="a">
+				        <label class="form-check-label" for="q26a1">加倍，再来</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q26a2" name="q26" value="b">
+				        <label class="form-check-label" for="q26a2">再尝试一次，如果运气有下跌就收手</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q26a3" name="q26" value="c">
+				        <label class="form-check-label" for="q26a3">我会给自己设定一个限度（比如赢一千或者输一千），达到限度之后会收手</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q26a4" name="q26" value="d">
+					    <label class="form-check-label" for="q26a4">果断收手</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题7：如果有一个输赢都很大的赌局，需要多人才能进入，你会不会拉一个队友参加？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q27a1" name="q27" value="a">
+				        <label class="form-check-label" for="q27a1">我不会，输掉的代价太沉重了，我不能代替别人决定他们的命运</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q27a2" name="q27" value="b">
+				        <label class="form-check-label" for="q27a2">我不会主动参加，但如果有人邀请我，我也可以试试</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q27a3" name="q27" value="c">
+				        <label class="form-check-label" for="q27a3">如果有合适的队友人选，我会去尝试一下</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q27a4" name="q27" value="d">
+					    <label class="form-check-label" for="q27a4">我会参加，并且主动去寻找合适的队友</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题8：你会怎样说服选择的同伴加入赌局？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q28a1" name="q28" value="a">
+				        <label class="form-check-label" for="q28a1">找我的朋友，我们的关系很好，只要我开口，他一定会参加</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q28a2" name="q28" value="b">
+				        <label class="form-check-label" for="q28a2">向他哭诉我很需要这笔钱，求他入伙帮我这一把</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q28a3" name="q28" value="c">
+				        <label class="form-check-label" for="q28a3">向他解释我为赌局做的准备，让他相信我会成功</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q28a4" name="q28" value="d">
+					    <label class="form-check-label" for="q28a4">向他坦诚我知道的一切，就连明言自己所求利益是钱也一样</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题9：你觉得自己的第六感准确吗？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q29a1" name="q29" value="a">
+				        <label class="form-check-label" for="q29a1">当然，无论概率多小，只要是我坚信的事情，通通都变为了现实</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q29a2" name="q29" value="b">
+				        <label class="form-check-label" for="q29a2">他还挺常见的，只是有时候准有时候不准，我也抓不住他</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q29a3" name="q29" value="c">
+				        <label class="form-check-label" for="q29a3">他只在非常偶然的情况下出现过一次两次，不过每次都帮了我很多</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q29a4" name="q29" value="d">
+					    <label class="form-check-label" for="q29a4">第六感都是虚的， 我没有第六感</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题10：现在，第六感告诉你，投资房地产将会赚大钱，你会去吗？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q2111a1" name="q2111" value="a">
+				        <label class="form-check-label" for="q2111a1">房地产都凉啦，不可能把钱浪费在那种地方</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q2111a2" name="q2111" value="b">
+				        <label class="form-check-label" for="q2111a2">我回去了解一下，哪怕不投资，多了解一下经济情况也是好的</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q2111a3" name="q2111" value="c">
+				        <label class="form-check-label" for="q2111a3">我会试试水，选择靠谱的人做谨慎的投资</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q2111a4" name="q2111" value="d">
+					    <label class="form-check-label" for="q2111a4">我会去赚破产的房地产商人的钱</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题11：现在，你的第六感告诉你，眼前的这个其貌不扬的人会是你命中注定的伴侣，你会去搭讪吗？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q211a1" name="q211" value="a">
+				        <label class="form-check-label" for="q211a1">想那么多干嘛，喜欢就去搭讪喽</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q211a2" name="q211" value="b">
+				        <label class="form-check-label" for="q211a2">记下他的脸，如果有缘分还能再相遇，就去搭讪</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q211a3" name="q211" value="c">
+				        <label class="form-check-label" for="q211a3">我社恐，张不开嘴</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q211a4" name="q211" value="d">
+					    <label class="form-check-label" for="q211a4">我命中注定的伴侣是赌博和胜利，不是人</label>
+					</div>
+				</div>
+				<div class="test-card">
+				    <div class="question">
+				        <p>问题12：在学校时期你遵守校规校纪吗？</p>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q212a1" name="q212" value="a">
+				        <label class="form-check-label" for="q212a1">我一直有遵守，哪怕有些时候是被迫的</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q212a2" name="q212" value="b">
+				        <label class="form-check-label" for="q212a2">大多数时候都会遵守，只是偶尔会有一点点无伤大雅的小意外</label>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="radio" id="q212a3" name="q212" value="c">
+				        <label class="form-check-label" for="q212a3">什么是校规校纪，那东西我想听的时候听，不想听的时候他就不存在</label>
+				    </div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" id="q212a4" name="q212" value="d">
+					    <label class="form-check-label" for="q212a4">我很看不惯那些莫名其妙的规则，有时我甚至会刻意违背他们</label>
+					</div>
+				</div>
 				
 				
 				
                 <button type="submit" class="btn btn-primary w-100">提交</button>
             </form>
             <div id="result2" class="result"></div>
-            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton2">清除答案</button>
+            <button type="button" class="btn btn-secondary btn-clear w-100" id="clearButton2">返回选题</button>
         </div>
     </div>
 
@@ -398,9 +539,9 @@
 
                 let resultText = "";
                 if (knowledgeScore >= 1) {
-                    resultText = "你答对了，知识掌握不错！";
+                    resultText = "还在施工";
                 } else {
-                    resultText = "你在知识方面还有进步空间。";
+                    resultText = "还在施工";
                 }
                 result1.innerHTML = resultText;
             });
@@ -421,46 +562,290 @@
             testForm2.addEventListener('submit', function (e) {
                 e.preventDefault();
                 // 定义维度得分
-                let hobbyScore = 0;
-                let colorPreferenceScore = 0;
+                let kaisi = 0;
+                let heye = 0;
+				let chimu = 0;
+				let jiuchao = 0;
+				let pingshan = 0;
+				let shenyu = 0;
+				let tian = 0;
+				let ling = 0;
+				let biao = 0;
+				let ya = 0;
+				let yiner = 0;
+				let sentian = 0;
 
                 // 获取问题1的答案
                 let q21 = document.querySelector('input[name="q21"]:checked');
                 if (q21) {
                     if (q21.value === 'a') {
-                        hobbyScore += 1;
+                        chimu += 1;
+						sentian += 1;
+						biao += 1;
+						shenyu += 1;
                     } else if (q21.value === 'b') {
-                        hobbyScore += 2;
+                        pingshan += 1;
+						ling += 1;
                     } else if (q21.value === 'c') {
-                        hobbyScore += 3;
-                    }
+                        kaisi += 1;
+						heye += 1;
+						tian += 1;
+					} else if (q21.value === 'd') {
+					    jiuchao += 1;
+						yiner += 1;
+						ya += 1;
+					}
                 }
 
                 // 获取问题2的答案
                 let q22 = document.querySelector('input[name="q22"]:checked');
                 if (q22) {
                     if (q22.value === 'a') {
-                        colorPreferenceScore += 1;
+                        tian += 1;
+						ling += 1;
+						yiner += 1;
+						jiuchao += 1;
                     } else if (q22.value === 'b') {
-                        colorPreferenceScore += 2;
+                        sentian += 1;
+						kaisi += 1;
+						heye += 1;
                     } else if (q22.value === 'c') {
-                        colorPreferenceScore += 3;
-                    }
+                        biao += 1;
+						shenyu += 1;
+						pingshan += 1;
+					} else if (q22.value === 'd') {
+					    chimu += 1;
+						ya += 1;
+					}
                 }
+				let q23 = document.querySelector('input[name="q23"]:checked');
+				if (q23) {
+				    if (q23.value === 'a') {
+				        chimu += 1;
+						kaisi += 1;
+						ya += 1;
+				    } else if (q23.value === 'b') {
+				        shenyu += 1;
+						tian += 1;
+						ling += 1;
+						pingshan += 1;
+				    } else if (q23.value === 'c') {
+				        heye += 1;
+						sentian += 1;
+						biao += 1;
+					} else if (q23.value === 'd') {
+					    jiuchao += 1;
+						yiner += 1;
+						sentian += 1;
+					}
+				}
+				let q24 = document.querySelector('input[name="q24"]:checked');
+				if (q24) {
+				    if (q24.value === 'a') {
+						ya += 1;
+				    } else if (q24.value === 'b') {
+				        pingshan += 1;
+						shenyu += 1;
+				    } else if (q24.value === 'c') {
+				        kaisi += 1;
+						jiuchao += 1;
+						tian += 1;
+						ling += 1;
+						biao += 1;
+					} else if (q24.value === 'd') {
+					    chimu += 1;
+						heye += 1;
+						yiner += 1;
+						sentian += 1;
+					}
+				}
+				let q25 = document.querySelector('input[name="q25"]:checked');
+				if (q25) {
+				    if (q25.value === 'a') {
+						kaisi += 1;
+						heye  += 1;
+						jiuchao += 1;
+				    } else if (q25.value === 'b') {
+				       tian += 1;
+				    } else if (q25.value === 'c') {
+				        ling += 1;
+						biao += 1;
+					} else if (q25.value === 'd') {
+					    yiner += 1;
+						sentian += 1;
+						chimu  += 1;
+					} else if (q25.value === 'e') {
+						pingshan += 1;
+						shenyu += 1;
+						ya += 1;
+					}
+				}
+				let q26 = document.querySelector('input[name="q26"]:checked');
+				if (q26) {
+				    if (q26.value === 'a') {
+						chimu += 1;
+						jiuchao += 1;
+						shenyu += 1;
+						kaisi += 1;
+				    } else if (q26.value === 'b') {
+				       biao += 1;
+					   sentian += 1;
+					   tian += 1;
+				    } else if (q26.value === 'c') {
+				        heye += 1;
+						ling += 1;
+						biao += 1;
+						yiner += 1;
+					} else if (q26.value === 'd') {
+					    pingshan += 1;
+						ya += 1;
+					}
+				}let q27 = document.querySelector('input[name="q27"]:checked');
+				if (q27) {
+				    if (q27.value === 'a') {
+						ling += 1;
+						ya += 1;
+				    } else if (q27.value === 'b') {
+				       chmu += 1;
+					   pingshan += 1;
+				    } else if (q27.value === 'c') {
+				        heye += 1;
+						tian += 1;
+						shenyu += 1;
+						sentian += 1;
+					} else if (q27.value === 'd') {
+					    kaisi += 1;
+						jiuchao += 1;
+						yiner += 1;
+						biao += 1;
+					}
+				}let q28 = document.querySelector('input[name="q28"]:checked');
+				if (q28) {
+				    if (q28.value === 'a') {
+						kaisi += 1;
+						tian += 1;
+						shenyu += 1;
+				    } else if (q28.value === 'b') {
+				      
+				    } else if (q28.value === 'c') {
+				        heye += 1;
+						jiuchao += 1;
+						qingshan += 1;
+						yinwe += 1;
+						biao += 1;
+					} else if (q28.value === 'd') {
+					    chimu += 1;
+						sentian += 1;
+						ya += 1;
+						ling += 1;
+					}
+				}let q29 = document.querySelector('input[name="q29"]:checked');
+				if (q29) {
+				    if (q29.value === 'a') {
+						chimu += 1;
+						jiuchao += 1;
+						shenyu += 1;
+				    } else if (q29.value === 'b') {
+				       kaisi += 1;
+					   yiner += 1;
+					   sentian += 1;
+					   ling += 1;
+				    } else if (q29.value === 'c') {
+				        heye += 1;
+						tian += 1;
+						biao += 1;
+					} else if (q29.value === 'd') {
+					    pingshan += 1;
+						ya += 1;
+					}
+				}let q2111 = document.querySelector('input[name="q2111"]:checked');
+				if (q211) {
+				    if (q211.value === 'a') {
+						kaisi += 1;
+						pingshan += 1;
+						ya += 1;
+				    } else if (q211.value === 'b') {
+				       tian += 1;
+					   ling += 1;
+				    } else if (q211.value === 'c') {
+				        shenyu += 1;
+						biao += 1;
+					} else if (q211.value === 'd') {
+					    heye += 1;
+						chimu += 1;
+						jiuchao += 1;
+						yiner += 1;
+						sentian += 1;
+					}
+				}let q211 = document.querySelector('input[name="q211"]:checked');
+				if (q211) {
+				    if (q211.value === 'a') {
+						heye += 1;
+						tian += 1;
+						biao += 1;
+				    } else if (q211.value === 'b') {
+				       pingshan += 1;
+					   ling += 1;
+				    } else if (q211.value === 'c') {
+				        kaisi += 1;
+						ya += 1;
+					} else if (q211.value === 'd') {
+					    chimu += 1;
+						jiuchao += 1;
+						shenyu += 1;
+						yiner += 1;
+						sentian += 1;
+					}
+				}let q212 = document.querySelector('input[name="q212"]:checked');
+				if (q212) {
+				    if (q212.value === 'a') {
+						pingshan += 1;
+						ling += 1;
+						biao += 1;
+				    } else if (q212.value === 'b') {
+				       kaisi += 1;
+					   tian += 1;
+					   ya += 1;
+				    } else if (q212.value === 'c') {
+				        chimu += 1;
+						jiuchao += 1;
+						shenyu += 1;
+						yiner += 1;
+					} else if (q212.value === 'd') {
+					    heye += 1;
+						sentian += 1;
+					}
+				}
+				let kaisi = kaisi*100/12;
+				let heye = heye *100/12;
+				let chimu = chimu *100/12;
+				let jiuchao = jiuchao *100/12;
+				let pingshan = pingshan *100/12;
+				let shenyu = shenyu *100/12;
+				let tian = tian *100/12;
+				let ling = ling *100/12;
+				let biao = biao *100/12;
+				let ya = ya *100/12;
+				let yiner = yiner *100/12;
+				let sentian = sentian *100/12;
 
-                let resultTableHTML = '<table class="result-table"><tr><th>维度名称</th><th>结论</th></tr>';
+                let resultTableHTML = '<table class="result-table"><tr><th>角色</th><th>缘分值</th><th>结论</th></tr>';
                 // 兴趣爱好得分结论
-                let hobbyResult = "";
-                if (hobbyScore >= 2) {
-                    hobbyResult = "你有丰富的兴趣爱好";
-                } else {
-                    hobbyResult = "你可以尝试培养更多兴趣爱好";
+                let kaisiResult = "";
+                if (kaisi < 20) {
+                    kaisiResult = "你们的缘分值太浅了，几乎是两个世界的人。就算在大街上路过，见过一两面，也没有办法给彼此留下任何印象。";
+                } else if(kaisi < 45){
+                    kaisiResult = "开司是你家附近一只没药救的赌狗，你见过他在输光身上的所有钱之后哭天喊地地向身边人借钱的样子，不知道处于什么目的，你把今天赢到的钱给了他……赌狗太可怕了，看到开司的境况后，你下定决心戒了赌，并且再不跟他来往";
+					 } else if(kaisi < 70){
+						 kaisiResult = "你赌输钱的时候被开司拉入了伙，赢了一大把。以此为契机，你决定这辈子都认开司做大哥，为他执鞭坠镫，鞍前马后……直到，有人花钱请你坑他一把"
+						  } else if{
+							  kaisiResult = "作为跟开司同睡一个被窝的伙伴，你已经意识到开司是个无可救药的赌狗了。不过能咋办呢，接受现实吧。平时多长双眼睛盯着他，别又一个不小心欠一屁股高利贷了"
                 }
-                resultTableHTML += `<tr><td>兴趣爱好得分</td><td>${hobbyResult}</td></tr>`;
+                resultTableHTML += `<tr><td>开司</td><td>${kaisi}%</td><td>${kaisiResult}</td></tr>`;
                 // 颜色偏好得分结论
                 let colorResult = "";
                 if (colorPreferenceScore >= 2) {
-                    colorResult = "你对颜色有明确的偏好";
+                    colorResult = "${score}你对颜色有明确的偏好";
                 } else {
                     colorResult = "你对颜色的偏好不太明显";
                 }
